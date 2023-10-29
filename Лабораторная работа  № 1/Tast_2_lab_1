@@ -1,0 +1,9 @@
+# Расчет количеств книг на дискете
+one_symbol = 4
+quantity_in_str = 25 * 4
+quantity_in_lines_on_page = 50 * 100
+all_book = 5000 * 100
+Kb = all_book / 1024
+Mb = Kb / 1024
+End = 1.44 // Mb
+print("Количество книг, помещающихся на дискету:", End)
