@@ -1,0 +1,7 @@
+# Разделение игроков на две команды
+list_players = ["Маша", "Петя", "Саша", "Оля", "Кирилл", "Коля"]
+len_1 = len(list_players)
+dif_ = list_players[:-3]
+dif_2 = list_players[3:]
+print(dif_)
+print(dif_2)
