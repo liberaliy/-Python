@@ -1,0 +1,15 @@
+import csv
+import json
+
+i_i = "input.csv"
+
+
+def csv_to_json(i_i, delimiter=',', newline='\n'):
+    with open(i_i, 'r', newline=newline, encoding='utf-8') as f:
+        reader = csv.DictReader(f, delimiter=delimiter)
+
+        data = [row for row in reader]
+
+    json_data = json.dumps(data, indent=4, ensure_ascii=False)
+
+    return json_data
