@@ -1,0 +1,12 @@
+required_file = "input.json"
+
+
+def task() -> float:
+    with open(required_file) as f:
+        converted_file = json.load(f)
+
+    sum_ = sum(entry["score"] * entry["weight"] for entry in converted_file)
+
+    end_ = round(sum_, 3)
+
+    return end_
